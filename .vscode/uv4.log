@@ -1,0 +1,19 @@
+  
+Warning: *** SUPPORT EXPIRED, NEW PRODUCT SERIAL NUMBER REQUIRED ***
+         *** Running with Code Size Limit: 32K                   ***
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\MDK\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling oled.c...
+Hardware\oled.c(91): warning:  #223-D: function "OLED_WriteCommand" declared implicitly
+      OLED_WriteCommand(0xAE);	//????
+Hardware\oled.c(130): warning:  #1-D: last line of file ends without a newline
+  }
+Hardware\oled.c: 2 warnings, 0 errors
+linking...
+.\Objects\Project.axf: Error: L6218E: Undefined symbol OLED_WriteCommand (referred from oled.o).
+Not enough information to list image symbols.
+Not enough information to list load addresses in the image map.
+Finished: 2 information, 0 warning and 1 error messages.
+".\Objects\Project.axf" - 1 Error(s), 3 Warning(s).
+Target not created.
+Build Time Elapsed:  00:00:01

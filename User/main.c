@@ -1,0 +1,28 @@
+#include "stm32f10x.h"                  // Device header
+#include "Delay.h"
+#include "oled.h"
+#include "Key.h"
+#include "Encoder.h"
+#include "LED.h"
+#include "menu.h"
+
+const uint8_t Img[] = {
+    0xC0,0x78,0x0C,0x06,0xE3,0x73,0x43,0x62,0x32,0xE6,0x0C,0x18,0x30,0xE0,0x80,0x03,
+    0x0E,0x18,0x10,0x31,0x20,0x26,0x2C,0x26,0x23,0x30,0x10,0x10,0x1F,0x00,/*"未命名文件",0*/
+};
+
+extern uint8_t OLED_ShowBuf[8][128];
+int main()
+{
+    uint16_t i,j;
+    OLED_Init();
+    Timer_Init();
+   // Encoder_Init();
+    LED_Init();
+    MPU6050_Init(); 
+    while(1)
+    {
+      MENU_SHOW_PARENTMenu();
+    }
+}
+
